@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import DeleteIcon from '@mui/icons-material/DeleteTwoTone';
 import { useSelector, useDispatch } from 'react-redux';
-import { doneTodo, deleteTodo } from '../actions'
 import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
 import Fab from '@mui/material/Fab';
 import { addThing } from '../actions';
 
@@ -33,7 +30,7 @@ const Things = () => {
     return ( 
       <div className="body-layout">
         <div className="form">
-            <input type="text" value={textInput} onChange={()=> {handleInput}} />
+            <input type="text" value={textInput} onChange={handleInput} />
             <Fab onClick={() => {dispatch(addThing(textInput)); handleClickClear()}}>
             <AddIcon />
             </Fab>
