@@ -33,7 +33,7 @@ const Things = () => {
     return ( 
       <div className="body-layout">
         <div className="form">
-            <input type="text" data-testid='textInput' value={textInput} onChange={()=> {handleInput}} />
+            <input type="text" value={textInput} onChange={()=> {handleInput}} />
             <Fab onClick={() => {dispatch(addThing(textInput)); handleClickClear()}}>
             <AddIcon />
             </Fab>
