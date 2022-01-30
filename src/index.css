@@ -1,0 +1,131 @@
+body {
+  background-color: #ffeaa7;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
+}
+
+span {
+  text-decoration: underline;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: #f1f5f8;
+  /* background-image: radial-gradient(#bfc0c1 7.2%, transparent 0); */
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #f5ba13;
+} 
+
+.welcome {
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading h1 {
+  /* transform: rotate(2deg); */
+  padding: 0.2rem 1.2rem;
+  /* border-radius: 20% 5% 20% 5%/5% 20% 25% 20%; */
+  background-color: #fdcb6e;
+  font-size: 2rem;
+}
+
+.body-layout {
+  margin-top: 2rem;
+}
+
+.form input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #fdcb6e;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.5rem;
+  color: hsla(260, 2%, 25%, 0.7);
+  width: 70%;
+  margin-bottom: 20px;
+}
+.form input:focus {
+/* outline-color: rgb(126, 88, 24); */
+  outline-color: transparent;
+}
+
+
+.form button {
+  background-color: #f5ba13;
+  color: #fff;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.form button:hover {
+  background-color: gray;
+}
+
+/* button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid hsl(198, 1%, 29%);
+} */
+
+.itemLabel {
+  width: 85%;
+  display: inline-block;
+}
+
+ul.thing-list {
+  list-style-type: '🔅 ';
+  text-align: left;
+}
+
+li .thing {
+  text-align: left;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.todoItem button {
+  color:#fdcb6e;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
